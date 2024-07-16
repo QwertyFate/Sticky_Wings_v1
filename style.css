@@ -1,0 +1,1054 @@
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: auto;
+}
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Play", "sans-serif";
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    position: fixed;
+    transition: all 0.2 ease 0s;
+    z-index: 99;
+    
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 0, 0px;
+}
+
+header nav {
+    background: #272727;
+    max-width: 100%;
+    margin: 0px, auto, 0;
+}
+
+
+header a img {
+    width: 100px;
+    margin-left: 5vw;
+}
+
+header .menuItems{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10vw;
+}
+
+header .menuItems li{
+    margin-right: 3.5vw;
+    
+}
+
+header .menuItems a{
+    color: #FB8B24;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+header .menuItems a:hover {
+    color: #E36414;
+    transition: all 1s ease-in-out 0;
+}
+
+.whatsNewContainer {
+    background: #0C0C0C;
+    width: 100%;
+    margin-top: 100px;
+    padding-bottom: 100px;
+    position: relative;
+}
+
+.whatsNewContainer .slideShow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    background: #cf590f;
+    overflow-x: scroll;
+    margin-right: 0px;
+    transition: all  ease-in-out .1s;
+}
+
+.whatsNewContainer .slideShow::-webkit-scrollbar {
+    display: none;
+}
+
+.whatsNewContainer .slideShow img {
+    width: 30vw;
+    position: relative ;
+    align-content: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+
+
+.whatsNewContainer h2 {
+    color: #FB8B24;
+    font-size: 70px;
+    text-align: center;
+    padding-top: 50px;
+ }
+ .whatsNewContainer .scrollBtns {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 100;
+    height: 100%;
+    bottom: 18vw;
+    padding: 0 5vw;
+
+ }
+ .whatsNewContainer #leftBtn, .whatsNewContainer #rightBtn {
+    width: 100px;
+    height: 100px;
+    font-size: 50px;
+    color: #0C0C0C;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    
+ }
+
+ .whatsNewContainer #leftBtn:hover,.whatsNewContainer #rightBtn:hover {
+    color: #2e2d2d;
+ }
+
+
+
+ .whatsNewContainer .newImage {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding-top: 75px;
+
+
+ }
+ .whatsNewContainer .newImage .featureDescription {
+    width: 100vw;
+    color: #cf590f;
+    align-items: center;
+    justify-content: center;
+    padding-top: 250px;
+ }
+
+ .whatsNewContainer .newImage .featureDescription h2 {
+    align-self: center;
+    text-align: center;
+ }
+
+ .whatsNewContainer .newImage .featureDescription p {
+    font-size: 30px;
+    width: 40vw;
+    text-align: center;
+    padding-left: 100px;
+ }
+
+ .whatsNewContainer .newImage img {
+    width: 50%;
+    height: 50%;
+    padding-right: 10vw;
+    padding-top: 100px;
+ }
+
+ 
+
+.opening {
+    margin-top: 0px;
+    display: flex;
+    background: #9A031E;
+    align-items: center;
+    justify-content: center;
+    padding-top: 150px;
+    padding-bottom: 100px;
+    flex-direction: column;
+    
+}
+
+.opening h2 {
+    font-size: 50px;
+    color: #FB8B24;
+    font-weight: bolder;
+}
+
+.opening p {
+    padding: 100px 25px 25px;
+    font-size: 25px;
+    width: 70%;
+    color: #FB8B24;
+    text-align: justify;
+}
+
+.opening .placeImg {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    padding-top: 100px;
+}
+
+.opening .placeImg img {
+    width: 40%;
+    padding-left: 30px;
+}
+
+.opening .placeImg p {
+    width: 40%;
+}
+
+.topMenu {
+    background: #FB8B24;
+    top: 80px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+.topMenu h2 {
+    font-size: 60px;
+    padding-bottom: 50px;
+}
+.topMenu a h3 {
+    background: transparent;
+    font-size: 40px;
+    padding: 50px; 
+    border-radius: 5px;
+    border: 3px solid #5F0F40;
+    cursor: pointer;
+    
+}
+
+.topMenu a {
+    text-decoration: none;
+    color: #0C0C0C;
+}
+.topMenu h3:hover {
+    background-color: #ff9f45;
+}
+
+.menuCollapse {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background: #0C0C0C;
+
+}
+
+.menuCollapse h2 {
+    font-size: 50px;
+    width: 100%;
+    text-align: center;
+    color: #E36414;
+    margin-bottom: 100px;
+}
+
+.menuCollapse .flavors {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-left: 100px;
+    padding-bottom: 100px;
+}
+
+
+
+.menuCollapse .flavors .leftFlavors {
+    color: #E36414;
+    display: flex;
+    flex-direction: row;
+}
+
+.menuCollapse .flavors .leftFlavors .flavorsLeft, .menuCollapse .flavors .leftFlavors .flavorsRight {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 300px;
+    
+}
+
+.menuCollapse .flavors .leftFlavors .flavorsLeft .leftTeam, .menuCollapse .flavors .leftFlavors .flavorsRight .rightTeam{
+    list-style: none;
+    justify-content: space-between;
+    padding-right: 50px;
+    padding-top: 10px;
+}
+
+.menuCollapse .flavors .leftFlavors .flavorsLeft .leftTeam h4 {
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+
+.menuCollapse .flavors .leftFlavors .flavorsRight .rightTeam h4  {
+    font-size: 30px;
+    padding-bottom: 10px;
+    text-align: end;
+}
+
+.menuCollapse .flavors .leftFlavors .flavorsRight .rightTeam p {
+    text-align: left;
+    font-weight: 700;
+}
+.menuCollapse .flavors .leftFlavors .flavorsLeft .leftTeam p {
+    text-align:end;
+    font-weight: 700;
+} 
+
+.menuCollapse .flavors .rightFlavors img {
+    position: relative;
+    width: 80%;
+    left: 150px;
+    top: 100px;
+}
+
+.menuCollapse .menuDescription .firstDescription {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding-top: 80px;
+    padding-left: 150px;
+}
+
+.menuCollapse .menuDescription .secondDescription {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding-top: 200px;
+}
+
+.menuCollapse .menuDescription .firstDescription img {
+    width: 40%;
+}
+
+.menuCollapse .menuDescription .firstDescription div,  .menuCollapse .menuDescription .secondDescription img {
+    width: 100%;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+.menuCollapse .menuDescription .secondDescription div {
+    width: 100%;
+    padding-left: 0;
+}
+
+.menuCollapse .menuDescription .firstDescription div h2,.menuCollapse .menuDescription .secondDescription div h2 {
+    padding-top: 50px;
+}
+
+.menuCollapse .menuDescription .firstDescription div h3 {
+    color: #cf590f;
+    font-size: 30px;
+    padding-top: 20px;
+}
+
+.menuCollapse .menuDescription .secondDescription div h3 {
+    color: #cf590f;
+    font-size: 30px;
+    padding-top: 20px;
+    text-align: end;
+}
+
+.menuCollapse .menuDescription .firstDescription div p {
+    color: #cf590f;
+    justify-content: space-between;
+    text-align: end;
+    padding-left: 150px;
+    padding-top: 15px;
+    font-weight: 700;
+}
+
+.menuCollapse .menuDescription .secondDescription div p {
+    color: #cf590f;
+    justify-content: space-between;
+    padding-right: 1px;
+    padding-left: 300px;
+    padding-top: 30px;
+    text-align: end;
+    font-weight: 700;
+}
+
+.multiplayer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    background: #ff9f45;
+    flex-direction: column;
+}
+
+.multiplayer .multiplayerTitle h2 {
+    font-size: 50px;
+    width: 100%;
+}
+
+.multiplayer .multiplayerContent {
+    display: flex;
+    flex-direction: row;
+}
+
+.multiplayer .multiplayerContent div {
+    padding: 15px;
+    padding-top: 100px;
+}
+
+.multiplayer .multiplayerContent .leftMultiplayer {
+    padding-left: 300px;
+}
+.multiplayer .multiplayerContent .rightMultiplayer {
+    padding-right: 300px;
+}
+
+.multiplayer .multiplayerContent .leftMultiplayer,.multiplayer .multiplayerContent .rightMultiplayer  {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+}
+
+.multiplayer .multiplayerContent .leftMultiplayer h1,.multiplayer .multiplayerContent .rightMultiplayer h1 {
+    font-size: 50px;
+    padding-bottom: 50px;
+}
+
+.multiplayer .multiplayerContent .leftMultiplayer h2,.multiplayer .multiplayerContent .rightMultiplayer h2 {
+    font-size: 35px;
+    padding-bottom: 30px;
+}
+
+.multiplayer .multiplayerContent .leftMultiplayer p,.multiplayer .multiplayerContent .rightMultiplayer p {
+    width: 50%;
+    padding-bottom: 40px;
+    text-align: center;
+    font-weight: 700;
+}
+.multiplayer .orderBtn {
+    padding-top: 100px;
+}
+
+.multiplayer .orderBtn .messengerBtn {
+    padding: 25px 100px;
+    font-size: 30px;
+    background: transparent;
+    cursor: pointer;
+    font-weight: bolder;
+    text-transform:uppercase;
+    border-radius: 20px;
+}
+
+.multiplayer .orderBtn .messengerBtn:hover {
+    background-color: #f7b578;
+}
+
+
+.multiplayerImg {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+    padding-top: 100px;
+}
+
+.multiplayerImg img {
+    width: 25%;
+}
+
+footer {
+    padding-top: 20px;
+    background: #0f0f0f;
+    opacity: 0.9;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+
+footer .footerFirst {
+    display: flex;
+    flex-direction:row;  
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+footer .footerFirst .footerLeft {
+    display: flex;
+    flex-direction: row;
+    padding-left: 100px;
+}
+
+footer .footerFirst .footerLeft .footerBtns  {
+    display: flex;
+    width: 100%;
+    padding-left: 10px;
+    align-items: center;
+}
+footer .footerFirst .footerLeft .footerBtns ul {
+    list-style: none;
+}
+
+footer .footerFirst .footerLeft .footerBtns ul li {
+    font-size: 25px;
+    padding-top: 10px;
+    
+}
+footer .footerFirst .footerLeft .footerBtns ul li a{
+    text-decoration: none;
+    color: #cf590f;
+    font-weight: 800;
+}
+
+footer .footerFirst .footerLeft .footerBtns ul li a:hover {
+    color: #f18a4a;
+}
+
+footer .footerFirst .footerLeft .footerLogo img {
+    width: 200px;
+} 
+
+footer .footerFirst .socialMed {
+    display: flex;
+    flex-direction: row;
+    padding-right: 150px;
+    color: #cf590f;
+    align-items: center;
+    padding-top: 50px;
+}
+
+footer .footerFirst .socialMed h3 {
+    font-size: 30px;
+}
+
+footer .footerFirst .socialMed a {
+    text-decoration: none;
+    color: #cf590f;
+    padding-left: 20px;
+    font-size: 30px;
+}
+
+footer .footerFirst .socialMed a:hover {
+    color: #f18a4a;
+}
+
+footer p {
+    padding-top: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    color: #cf590f;
+}
+
+#home.active, #whatsNew.active, #aboutUs.active, #menuSec.active, #flavors.active, #food.active, #multiplayer.active {
+    color: #413f3f;
+    transition: all 1s ease-in-out 0;
+    font-size: 30px;
+    border-radius: 10px;
+    padding: 10px;
+    border: 3px solid #E36414;
+    background-color: #f7b578;
+    font-weight: 700;
+}
+
+
+ /*for responsive */
+header nav .mobileNav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    background: #272727;
+    padding: 50px;
+    backdrop-filter: blur(10px);
+    justify-content: space-evenly;
+    list-style: none;
+    height: 100vh;
+    width: 250px;
+    margin-right: auto;
+    z-index: 999;
+    box-shadow: -10px 0 10px #E36414;
+    display: none;
+}
+
+header nav .mobileNav .navItemMobile a {
+    color: #cf590f;
+    text-decoration: none;
+    width: 100%;
+}
+
+
+/* for mobile */
+
+
+header .menuItems .mobileBurger button {
+    height: 50px;
+    width: 50px;
+    display: none;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+header .menuItems .mobileBurger button :hover {
+    color:#f18a4a;
+}
+
+header .menuItems .mobileBurger button i {
+    font-size: 50px;
+    color: #cf590f;
+}
+
+@media (max-width: 1200px) {
+    header .menuItems .mobileBurger button {
+        display: flex;
+        margin-left: 50vw;
+        right: 0;
+    }
+    header .menuItems .navItem {
+        display: none;
+    }
+
+    header .menuItems {
+        margin-right: 3vw;
+    }
+}
+
+@media (max-width: 800px) {
+    html {
+        overflow-x: hidden;
+    }
+    .whatsNewContainer .slideShow img {
+        width: 80vw;
+        position: relative ;
+        align-content: center;
+        padding-left: 50px;
+        padding-right: 50px;
+        scroll-behavior: smooth;
+    }
+    .whatsNewContainer .scrollBtns {
+        display: none;
+    }
+    .whatsNewContainer h2 {
+        color: #FB8B24;
+        font-size: 3rem;
+    }
+    .whatsNewContainer .newImage {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding-left: 0px;
+        padding-top: 10px;
+        align-items: center;
+     }
+
+     .whatsNewContainer .newImage .featureDescription{
+        flex-direction: column;
+        display: flex;
+        padding-top: 0;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+     }
+
+     .whatsNewContainer .newImage .featureDescription h2 {
+        padding-left: 0;
+        font-size: 40px;
+     }
+
+     .whatsNewContainer .newImage .featureDescription p {
+        font-size: 20px;
+        padding-top: 20px;
+        width: 90%;
+        padding-left: 0;
+     }
+     .whatsNewContainer .newImage img {
+        width: 350px;
+        padding-top: 50px;
+     }
+
+     .opening {
+        padding-top: 50px;
+     }
+
+     .opening h2 {
+        font-size: 45px;
+        color: #FB8B24;
+        font-weight: bolder;
+    }
+
+    .opening p {
+        padding: 50px 5px 10px;
+        width: 90%;
+        font-size: 19px;
+        text-align: justify;
+        text-indent: 40px;
+    }
+
+    .opening .placeImg {
+        flex-direction: column;
+        padding-top: 30px;
+    }
+
+    .opening .placeImg img {
+        width: 90vw;
+        padding-left: 0;
+        padding-top: 10px;
+    }
+    .opening .placeImg p {
+        width: 90vw;
+    }
+
+    .topMenu {
+        padding: 50px 20px;
+    }
+
+    .topMenu h2 {
+        font-size: 40px
+    }
+
+    .topMenu a h3 {
+        font-size: 30px;
+    }
+
+    .menuCollapse {
+        padding: 100px 0px;
+    }
+
+    .menuCollapse h2 {
+        font-size: 30px;
+    }
+
+    .menuCollapse .flavors {
+        flex-direction: column;
+        padding-left: 0px;
+        padding-right: 0;
+        justify-content: center;
+    }
+    .menuCollapse .flavors .leftFlavors {
+        flex-direction: column;
+    }
+
+    .menuCollapse .flavors .leftFlavors .flavorsLeft .leftTeam, .menuCollapse .flavors .leftFlavors .flavorsRight .rightTeam {
+        padding-right: 0;
+        padding-left: 30px;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        width: 90vw;
+    }
+
+    .menuCollapse .flavors .leftFlavors .flavorsRight .rightTeam h4 {
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .menuCollapse .flavors .leftFlavors .flavorsRight .rightTeam p {
+        text-align: center;
+    }
+
+    .menuCollapse .flavors .leftFlavors .flavorsLeft .leftTeam p {
+        text-align: center;
+    }
+
+    .menuCollapse .flavors .rightFlavors img {
+        position: relative;
+        padding-top: 50px;
+        padding-left: 12px;
+        left: 0;
+        top: 0;
+        width: 95vw;
+        align-items: center;
+    }
+
+    .menuCollapse .menuDescription .firstDescription {
+        flex-direction: column;
+        padding-left: 0px;
+        padding-top: 0;
+    }
+    .menuCollapse .menuDescription .firstDescription h2 {
+        margin-bottom: 30px;
+    }
+
+    .menuCollapse .menuDescription .firstDescription img {
+        width: 90vw;
+        padding-top: 0;
+        margin-left: 17px;
+    }
+
+    .menuCollapse .menuDescription .firstDescription div {
+        padding: 0;
+    }
+
+    .menuCollapse .menuDescription .firstDescription div h2 {
+        padding-top: 5px;
+    }
+
+    .menuCollapse .menuDescription .firstDescription div h3  {
+        padding-top: 20px;
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .menuCollapse .menuDescription .firstDescription div p {
+        padding-left: 20px;
+        margin-left: 10px;
+        text-align: center;
+        width: 90vw;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menuCollapse .menuDescription .secondDescription {
+        flex-direction: column;
+        padding-top: 50px;
+    }
+
+    .menuCollapse .menuDescription .secondDescription div h3 {
+        text-align: center;
+        font-size: 25px;
+    }
+
+    .menuCollapse .menuDescription .secondDescription div p {
+        justify-content: center;
+        padding-left: 17px;
+        width: 90vw;
+        text-align: center;
+    }
+
+    .menuCollapse .menuDescription .secondDescription img {
+        width: 90vw;
+        padding: 0px;
+        padding-top: 50px;
+        margin-left: 15px;
+    }
+
+    .multiplayer {
+        padding-top: 50px;
+        padding-bottom: 20px;
+    }
+
+    .multiplayer .multiplayerTitle h2 {
+        font-size: 40px;
+    }
+
+    .multiplayer .multiplayerContent {
+        flex-direction: column;
+    }
+
+    .multiplayer .multiplayerContent .leftMultiplayer {
+        padding-left: 20px;
+    }
+
+    .multiplayer .multiplayerContent .rightMultiplayer {
+        padding-right: 20px;
+    }
+
+    .multiplayer .multiplayerContent .leftMultiplayer,.multiplayer .multiplayerContent .rightMultiplayer {
+        width: 95vw;
+    }
+
+    .multiplayer .multiplayerContent .leftMultiplayer p,.multiplayer .multiplayerContent .rightMultiplayer p {
+        width: 90vw;
+    } 
+
+    #coop3, #coop1 {
+        display: none;
+    }
+
+    .multiplayerImg {
+        padding-top: 20px;
+    }
+
+    .multiplayerImg img {
+        width: 95vw;
+    }
+
+    .multiplayer .orderBtn {
+        padding-top: 20px;
+        
+    }
+
+    .multiplayer .orderBtn .messengerBtn {
+        width:90vw;
+        font-size: 20px;
+    }
+
+    
+    footer .footerFirst {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    footer .footerFirst .footerLeft {
+        padding-left: 0;
+    }
+
+    footer .footerFirst .footerLeft .footerLogo img {
+        width: 40vw;
+    }
+
+    footer .footerFirst .socialMed {
+        padding-right: 0;
+    }
+
+    footer .footerFirst .socialMed h3 {
+        font-size: 20px;
+    }
+
+    footer p {
+       font-size: 15px; 
+       
+    }
+}
+
+@media (min-width: 900px) and (max-width: 1800px) {
+
+    #home.active, #whatsNew.active, #aboutUs.active, #menuSec.active, #flavors.active, #food.active, #multiplayer.active {
+        color: #FB8B24;
+        text-decoration: none;
+        border: none;
+        background-color: transparent;
+        font-size: 15px;
+        font-weight: 500;
+        padding: 0;
+        
+    }
+
+    html{
+        overflow-x: hidden;
+    }
+
+    header .menuItems li {
+        margin-left: 10px;
+
+    }
+    header .menuItems {
+        margin-right: 20px;
+    }
+
+    header .menuItems a {
+        font-size: 15px;
+    }
+
+    .whatsNewContainer .newImage .featureDescription {
+        padding-top: 10vw;
+    }
+
+    .whatsNewContainer .newImage .featureDescription h2 {
+        font-size: 50px;
+        margin-left: 50px;
+    }
+
+    .whatsNewContainer .newImage .featureDescription p {
+        font-size: 2vw;
+        width: 50vw;
+    }
+
+    .menuCollapse .flavors .rightFlavors img {
+        position: relative;
+        left: 0;
+        top: 0;
+        padding-top: 300px;
+    }
+
+    #foodSection {
+        padding-bottom: 0;
+    }
+
+    .menuCollapse .menuDescription .firstDescription{
+        padding-left: 100px;
+        padding-top: 0;
+    }
+
+    .menuCollapse .menuDescription .secondDescription {
+        padding-top: 100px;
+    }
+
+    .menuCollapse .menuDescription .firstDescription img {
+        margin-top: 200px;
+        padding-top: 0px;
+        width: 35vw;
+        height: 35vw;
+    }
+
+    .menuCollapse .menuDescription .firstDescription div {
+        padding: 0;
+        align-items: center;
+        margin-left: 10vw;
+    }
+
+    .menuCollapse .menuDescription .firstDescription div h3 {
+        font-size: 2em;
+        text-align: center;
+        margin-right: 5vw;
+    }
+
+    .menuCollapse .menuDescription .firstDescription div p {
+        font-size: 1em;
+        text-align: center;
+        padding-left: 20px;
+        width: 40vw;
+    }
+
+    .menuCollapse .menuDescription .firstDescription div h2 {
+        padding-right: 50px;
+    }
+
+    .menuCollapse .menuDescription .secondDescription div h2 {
+        padding-top: 0;
+    }
+
+    .menuCollapse .menuDescription .secondDescription img {
+        padding: 0;
+        width: 35vw;
+        height: 35vw;
+        margin-right: 120px;
+        margin-top: 100px;
+    }
+
+    .menuCollapse .menuDescription .secondDescription div h3 {
+        text-align: center;
+    }
+
+    .menuCollapse .menuDescription .secondDescription div p {
+        text-align: center;
+        padding-left: 0;
+        margin-left: 100px;
+        width: 40vw;
+    }
+    .multiplayer .multiplayerContent .leftMultiplayer {
+        padding-left: 100px;
+    }
+    .multiplayer .multiplayerContent .rightMultiplayer {
+        padding-right: 100px;
+    }
+    
+
+
+ 
+}
